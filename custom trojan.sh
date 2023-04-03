@@ -21,7 +21,7 @@ After=network.target
 
 [Service]
 Type=simple
-ExecStart=/usr/local/bin/trojan -c /root/trojan/config.json
+ExecStart=/root/trojan/trojan -c /root/trojan/config.json
 ExecStop=/usr/bin/pkill trojan
 Restart=on-failure
 
